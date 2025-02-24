@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+
+        .gallery-section {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+            border-radius: 16px;
+            border: 3px solid #0077ff;
+            box-shadow: 0 4px 15px rgba(0, 119, 255, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 119, 255, 0.5);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.15);
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 8px;
+            font-size: 1rem;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover .image-caption {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Travel Destinations Gallery</h2>
+    <div class="gallery-section">
+        <div class="section-title">Explore the World</div>
+        <div class="gallery-container">
+            <!-- Paris -->
+            <div class="gallery-item">
+                <img src="paris.jpg" alt="Paris">
+                <div class="image-caption">Eiffel Tower, Paris - The iconic symbol of France, attracting millions of
+                    visitors every year.</div>
+            </div>
+            <!-- Maldives -->
+            <div class="gallery-item">
+                <img src="maldives.jpg" alt="Maldives">
+                <div class="image-caption">Beaches, Maldives - Known for its turquoise waters, coral reefs, and
+                    luxurious resorts.</div>
+            </div>
+            <!-- Bali -->
+            <div class="gallery-item">
+                <img src="bali.jpg" alt="Bali">
+                <div class="image-caption">Ubud, Bali - Famous for its rice terraces, yoga retreats, and cultural
+                    heritage.</div>
+            </div>
+            <!-- Rome -->
+            <div class="gallery-item">
+                <img src="rome.jpg" alt="Rome">
+                <div class="image-caption">Colosseum, Rome - Ancient amphitheater and a symbol of the Roman Empire's
+                    power.</div>
+            </div>
+            <!-- Tokyo -->
+            <div class="gallery-item">
+                <img src="tokyo.jpg" alt="Tokyo">
+                <div class="image-caption">Shibuya Crossing, Tokyo - One of the busiest pedestrian crossings in the
+                    world.</div>
+            </div>
+            <!-- New York -->
+            <div class="gallery-item">
+                <img src="NY City.jpg" alt="New York">
+                <div class="image-caption">Times Square, New York - Famous for its bright lights, Broadway theaters, and
+                    billboards.</div>
+            </div>
+            <!-- Sydney -->
+            <div class="gallery-item">
+                <img src="sydney.jpg" alt="Sydney">
+                <div class="image-caption">Opera House, Sydney - A world-renowned architectural masterpiece and cultural
+                    icon of Australia.</div>
+            </div>
+            <!-- Cairo -->
+            <div class="gallery-item">
+                <img src="cairo.jpg" alt="Cairo">
+                <div class="image-caption">Pyramids of Giza, Cairo - Ancient wonders and tombs of Pharaohs that have
+                    stood the test of time.</div>
+            </div>
+            <!-- Cape Town -->
+            <div class="gallery-item">
+                <img src="cape town.jpg " alt="Cape Town">
+                <div class="image-caption">Table Mountain, Cape Town - A flat-topped mountain offering stunning views of
+                    the city and ocean.</div>
+            </div>
+            <!-- London -->
+            <div class="gallery-item">
+                <img src="london.jpg" alt="London">
+                <div class="image-caption">Big Ben, London - The iconic clock tower in the heart of London, often seen
+                    as a symbol of British heritage.</div>
+            </div>
+            <!-- Moscow -->
+            <div class="gallery-item">
+                <img src="moscow.jpg" alt="Moscow">
+                <div class="image-caption">Red Square, Moscow - A historical site that has been the heart of Russia for
+                    centuries.</div>
+            </div>
+            <!-- Barcelona -->
+            <div class="gallery-item">
+                <img src="barcelona.jpg" alt="Barcelona">
+                <div class="image-caption">Sagrada Familia, Barcelona - A unique basilica designed by architect Antoni
+                    Gaudí.</div>
+            </div>
+            <!-- Dubai -->
+            <div class="gallery-item">
+                <img src="dubai.jpg" alt="Dubai">
+                <div class="image-caption">Burj Khalifa, Dubai - The world's tallest building, offering spectacular
+                    views of the city.</div>
+            </div>
+            <!-- Amsterdam -->
+            <div class="gallery-item">
+                <img src="amsterdam.jpg" alt="Amsterdam">
+                <div class="image-caption">Canals, Amsterdam - Famous for its scenic canals and charming bike-friendly
+                    streets.</div>
+            </div>
+            <!-- Venice -->
+            <div class="gallery-item">
+                <img src="venice.jpg" alt="Venice">
+                <div class="image-caption">Gondola Rides, Venice - A romantic and historic way to explore the canals of
+                    Venice.</div>
+            </div>
+            <!-- Berlin -->
+            <div class="gallery-item">
+                <img src="berlin.jpg" alt="Berlin">
+                <div class="image-caption">Berlin Wall, Berlin - A symbol of the division of East and West Germany
+                    during the Cold War.</div>
+            </div>
+            <!-- Istanbul -->
+            <div class="gallery-item">
+                <img src="Istanbul.avif" alt="Istanbul">
+                <div class="image-caption">Blue Mosque, Istanbul - A stunning example of Ottoman architecture and
+                    Islamic art.</div>
+            </div>
+            <!-- Seoul -->
+            <div class="gallery-item">
+                <img src="seoul.jpg" alt="Seoul">
+                <div class="image-caption">Gyeongbokgung Palace, Seoul - A beautiful historical palace in the heart of
+                    Seoul.</div>
+            </div>
+            <!-- Beijing -->
+            <div class="gallery-item">
+                <img src="Beijing.jpg.crdownload" alt="Beijing">
+                <div class="image-caption">Great Wall, Beijing - A marvel of engineering stretching across thousands of
+                    miles.</div>
+            </div>
+            <!-- Santorini -->
+            <div class="gallery-item">
+                <img src="Santorini.jpg.crdownload" alt="Santorini">
+                <div class="image-caption">White Houses, Santorini - Famous for its white-washed buildings and beautiful
+                    sunsets.</div>
+            </div>
+            <!-- Havana -->
+            <div class="gallery-item">
+                <img src="Havana.jpg.crdownload" alt="Havana">
+                <div class="image-caption">Old Town, Havana - A UNESCO World Heritage site with colorful streets and
+                    vintage cars.</div>
+            </div>
+            <!-- Mumbai -->
+            <div class="gallery-item">
+                <img src="mumbai.jpg" alt="Mumbai">
+                <div class="image-caption">Gateway of India, Mumbai - A monumental archway that commemorates the visit
+                    of King George V.</div>
+            </div>
+            <!-- Delhi -->
+            <div class="gallery-item">
+                <img src="delhi.jpg" alt="Delhi">
+                <div class="image-caption">Red Fort, Delhi - A symbol of India's rich Mughal history and architecture.
+                </div>
+            </div>
+            <!-- Kyoto -->
+            <div class="gallery-item">
+                <img src="kyoto.jpg" alt="Kyoto">
+                <div class="image-caption">Fushimi Inari Shrine, Kyoto - Famous for its iconic red torii gates leading
+                    to the shrine.</div>
+            </div>
+            <!-- Los Angeles -->
+            <div class="gallery-item">
+                <img src="Los Angeles.jpg" alt="Los Angeles">
+                <div class="image-caption">Hollywood Sign, Los Angeles - The iconic symbol of the American film
+                    industry.</div>
+            </div>
+            <!-- Rio de Janeiro -->
+            <div class="gallery-item">
+                <img src="rio.jpg" alt="Rio">
+                <div class="image-caption">Christ the Redeemer, Rio - The towering statue overlooking Rio de Janeiro.
+                </div>
+            </div>
+            <!-- Toronto -->
+            <div class="gallery-item">
+                <img src="toronto.jpg" alt="Toronto">
+                <div class="image-caption">CN Tower, Toronto - One of the tallest freestanding structures in the world.
+                </div>
+            </div>
+            <!-- Singapore -->
+            <div class="gallery-item">
+                <img src="singapore.jpg" alt="Singapore">
+                <div class="image-caption">Marina Bay Sands, Singapore - An iconic hotel and resort with an infinity
+                    pool on the rooftop.</div>
+            </div>
+            <!-- Lisbon -->
+            <div class="gallery-item">
+                <img src="lisbon.jpg" alt="Lisbon">
+                <div class="image-caption">Tram, Lisbon - Famous for its historic yellow trams that navigate the city's
+                    hills.</div>
+            </div>
+            <!-- Prague -->
+            <div class="gallery-item">
+                <img src="prague.jpg" alt="Prague">
+                <div class="image-caption">Charles Bridge, Prague - A historic stone bridge adorned with statues of
+                    saints.</div>
+            </div>
+            <!-- Vienna -->
+            <div class="gallery-item">
+                <img src="vienna.jpg" alt="Vienna">
+                <div class="image-caption">Schönbrunn Palace, Vienna - A former imperial summer residence with stunning
+                    gardens.</div>
+            </div>
+            <!-- Athens -->
+            <div class="gallery-item">
+                <img src="athens.jpg" alt="Athens">
+                <div class="image-caption">Acropolis, Athens - A historic citadel featuring ancient ruins like the
+                    Parthenon.</div>
+            </div>
+            <!-- Oslo -->
+            <div class="gallery-item">
+                <img src="solo.jpg" alt="Oslo">
+                <div class="image-caption">Oslo Opera House, Oslo - A modern architectural masterpiece with views of the
+                    harbor.</div>
+            </div>
+            <!-- Helsinki -->
+            <div class="gallery-item">
+                <img src="helinski.jpg" alt="Helsinki">
+                <div class="image-caption">Helsinki Cathedral, Helsinki - A neoclassical landmark with a prominent green
+                    dome.</div>
+            </div>
+            <!-- Stockholm -->
+            <div class="gallery-item">
+                <img src="stockholm.jpg" alt="Stockholm">
+                <div class="image-caption">Gamla Stan, Stockholm - The charming old town with narrow streets and
+                    medieval buildings.</div>
+            </div>
+            <!-- Copenhagen -->
+            <div class="gallery-item">
+                <img src="copenhagen.jpg" alt="Copenhagen">
+                <div class="image-caption">Nyhavn, Copenhagen - A picturesque harbor with colorful buildings and boats.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
